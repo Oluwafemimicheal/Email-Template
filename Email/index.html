@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="imgbx">
+            <img src="image/email (1).png" alt="">
+        </div>
+        <div class="text-body">
+            <h1>Thanks for checking our Store</h1>
+            <button class="btn"> <a href="#">Verify your Account</a></button>
+            <p contenteditable="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vero omnis sed quos beatae sapiente</p>
+        </div>
+        <div class="footer">
+            <h4>Your can kindly reach out to us</h4>
+            <div class="social-media">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram-square"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div>
+            <h1>Thanks for your time</h1>
+            <p contenteditable="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequatur temporibus, doloremque delectus quibusdam, ab modi iure mollitia odio nobis dolorem sit blanditiis eveniet asperiores quo amet incidunt, obcaecati exercitationem.</p>
+        </div>
+    </div>
+
+    <script>
+        const button = document.querySelector('.btn')
+        const meg = document.querySelector('.popup')
+        button.addEventListener('click', () => {
+            meg.classList.add('show')
+            setInterval(() => {
+                    meg.classList.remove('show')
+                },
+                4000)
+        })
+    </script>
+</body>
+
+</html>
